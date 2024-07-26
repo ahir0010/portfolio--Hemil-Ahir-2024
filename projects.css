@@ -38,6 +38,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -154,6 +155,7 @@ nav ul li a:hover {
 main {
     padding: 2rem 5%;
 }
+
 .experience-section {
     display: flex;
     flex-wrap: wrap;
@@ -292,14 +294,15 @@ footer a:hover {
     color: #ddd;
 }
 
-.contact-info, .external-links {
+.contact-info,
+.external-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem 0;
 }
 
-.contact-main{
+.contact-main {
     padding-top: 100px;
     padding-bottom: 150px;
 }
@@ -316,7 +319,8 @@ footer a:hover {
     height: 65px;
 }
 
-.contact-info a, .external-links a {
+.contact-info a,
+.external-links a {
     margin-bottom: 0.5rem;
 }
 
@@ -339,9 +343,7 @@ footer a:hover {
     .social-icons a {
         margin-top: 12px;
     }
-    .nav-button{
-        margin-top: 2080px;
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -349,31 +351,36 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
     }
-    .contact-info, .external-links {
+
+    .contact-info,
+    .external-links {
         border: none;
         padding: 0;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 1rem;
     }
-    .hero-content{
+
+    .hero-content {
         padding-bottom: 50px;
     }
 }
+
 @media (max-width: 844px) and (min-width: 769px) {
     footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .contact-info, .external-links {
+    .contact-info,
+    .external-links {
         border: none;
         padding: 0;
         height: auto;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 1rem;
     }
 }
@@ -405,7 +412,8 @@ footer a:hover {
 }
 
 .logo-container {
-    padding-top: 45px; /* Adjust the value as needed */
+    padding-top: 45px;
+    /* Adjust the value as needed */
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -443,7 +451,8 @@ footer a:hover {
     gap: 2rem;
 }
 
-.iphone-x, .macbook {
+.iphone-x,
+.macbook {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -480,7 +489,8 @@ footer a:hover {
     pointer-events: none;
 }
 
-.left, .right {
+.left,
+.right {
     position: absolute;
     width: var(--button-width);
     display: flex;
@@ -507,7 +517,8 @@ footer a:hover {
     border-bottom-left-radius: 0.2em;
 }
 
-.screen-container, .macbook-screen-container {
+.screen-container,
+.macbook-screen-container {
     position: absolute;
     inset: 0;
     display: flex;
@@ -527,7 +538,8 @@ footer a:hover {
     border: 0.5em solid black;
 }
 
-.screen, .macbook-screen {
+.screen,
+.macbook-screen {
     width: 100%;
     height: 100%;
     display: flex;
@@ -535,7 +547,8 @@ footer a:hover {
     align-items: flex-start;
 }
 
-.screen img, .macbook-screen img {
+.screen img,
+.macbook-screen img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -572,20 +585,22 @@ footer a:hover {
     border-top-right-radius: 10px;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
 }
+
 @media (max-width: 1400px) {
     .nav-button {
         position: absolute;
-        top: 2580px;
         transform: translateY(100px);
         margin: 0.5rem;
         z-index: 10;
     }
 }
-@media (max-width: 1066px){
+
+@media (max-width: 1066px) {
     .timeline {
-       width: 0px;
-       height: 0px;
+        width: 0px;
+        height: 0px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -601,6 +616,7 @@ footer a:hover {
         max-width: 375px;
         margin-bottom: 2rem;
     }
+
     .macbook {
         width: 100%;
         height: auto;
@@ -608,16 +624,107 @@ footer a:hover {
         margin-bottom: 2rem;
     }
 
-    .macbook, .macbook::before, .macbook-horizontal-bar {
+    .macbook,
+    .macbook::before,
+    .macbook-horizontal-bar {
         border-radius: 10px;
     }
 
     .nav-button {
         position: absolute;
-        top: 2980px;
         transform: translateY(100px);
         margin: 0.5rem;
         z-index: 10;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .nav-button {
+        top: 3655px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .nav-button {
+        top: 3730px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1066px) {
+    .nav-button {
+        top: 3800px;
+    }
+}
+
+@media (min-width: 1067px) and (max-width: 1400px) {
+    .nav-button {
+        top: 2980px;
+    }
+}
+
+@media (min-width: 1401px) {
+    .nav-button {
+        top: 3000px;
+    }
+}
+
+@media (max-width: 661px) {
+    .nav-button {
+        top: 4285px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-button {
+        top: 4255px;
+    }
+}
+
+@media (max-width: 620px) {
+    .nav-button {
+        top: 4235px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-button {
+        top: 4205px;
+    }
+}
+
+@media (max-width: 580px) {
+    .nav-button {
+        top: 4175px;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-button {
+        top: 4135px;
+    }
+}
+
+@media (max-width: 540px) {
+    .nav-button {
+        top: 4115px;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav-button {
+        top: 4105px;
+    }
+}
+
+@media (max-width: 510px) {
+    .nav-button {
+        top: 4150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-button {
+        top: 4150px;
     }
 }
 
@@ -633,14 +740,17 @@ footer a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #696969; /* Consistent dark background color */
+    background-color: #696969;
+    /* Consistent dark background color */
     padding: 2rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff; /* White text color for contrast */
+    color: #fff;
+    /* White text color for contrast */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
 }
 
 footer a {
@@ -650,30 +760,40 @@ footer a {
 }
 
 footer a:hover {
-    color: #ddd; /* Slight color change on hover */
+    color: #ddd;
+    /* Slight color change on hover */
 }
 
-.contact-info, .external-links {
+.contact-info,
+.external-links {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the content */
+    align-items: center;
+    /* Center align the content */
     margin: 1rem 0;
 }
 
 .contact-info {
-    border-right: 1px solid #fff; /* Vertical line */
-    padding-right: 2rem; /* Spacing for the line */
+    border-right: 1px solid #fff;
+    /* Vertical line */
+    padding-right: 2rem;
+    /* Spacing for the line */
 }
 
 .external-links {
-    padding-left: 2rem; /* Spacing for the line */
-    border-left: 1px solid #fff; /* Vertical line */
-    padding-right: 2rem; /* Spacing for the line */
+    padding-left: 2rem;
+    /* Spacing for the line */
+    border-left: 1px solid #fff;
+    /* Vertical line */
+    padding-right: 2rem;
+    /* Spacing for the line */
     height: 65px;
 }
 
-.contact-info a, .external-links a {
-    margin-bottom: 0.5rem; /* Add spacing between links */
+.contact-info a,
+.external-links a {
+    margin-bottom: 0.5rem;
+    /* Add spacing between links */
 }
 
 .external-links .social-icons {
@@ -682,13 +802,15 @@ footer a:hover {
 }
 
 .social-icons a {
-    font-size: 1.5rem; /* Increase icon size */
+    font-size: 1.5rem;
+    /* Increase icon size */
     display: flex;
     align-items: center;
 }
 
 .social-icons a i {
-    margin-right: 0.5rem; /* Add space between icon and text */
+    margin-right: 0.5rem;
+    /* Add space between icon and text */
 }
 
 @media (min-width: 769px) {
@@ -702,12 +824,15 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
     }
-    .contact-info, .external-links {
-        border: none; /* Remove border on small screens */
+
+    .contact-info,
+    .external-links {
+        border: none;
+        /* Remove border on small screens */
         padding: 0;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 1rem;
     }
 }
@@ -718,17 +843,20 @@ footer a:hover {
         text-align: center;
     }
 
-    .contact-info, .external-links {
-        border: none; /* Remove border on small screens */
+    .contact-info,
+    .external-links {
+        border: none;
+        /* Remove border on small screens */
         padding: 0;
         height: auto;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 1rem;
     }
 }
-.experience-heading{
+
+.experience-heading {
     text-align: center;
     padding-bottom: 50px;
 }

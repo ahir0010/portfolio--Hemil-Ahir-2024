@@ -8,16 +8,20 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e0e0e0; /* Match the body background color */
+    background-color: #e0e0e0;
+    /* Match the body background color */
 }
 
 header {
     padding: 1rem 5%;
     position: relative;
     z-index: 1000;
-    background-color: #e0e0e0; /* Match the body background color */
-    border: none; /* Remove border */
-    box-shadow: none; /* Remove shadow */
+    background-color: #e0e0e0;
+    /* Match the body background color */
+    border: none;
+    /* Remove border */
+    box-shadow: none;
+    /* Remove shadow */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -57,7 +61,8 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #e0e0e0; /* Match the body background color */
+        background-color: #e0e0e0;
+        /* Match the body background color */
         position: absolute;
         top: 100%;
         left: 0;
@@ -160,7 +165,8 @@ footer a {
     text-decoration: none;
 }
 
-.contact-info, .external-links {
+.contact-info,
+.external-links {
     display: flex;
     flex-direction: column;
 }
@@ -170,7 +176,8 @@ footer a {
         flex-direction: column;
     }
 
-    .hero-content, .hero-image {
+    .hero-content,
+    .hero-image {
         width: 100%;
     }
 
@@ -179,7 +186,7 @@ footer a {
         text-align: center;
     }
 
-    footer > * {
+    footer>* {
         margin-bottom: 1rem;
     }
 }
@@ -190,7 +197,8 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 150px); /* Adjust based on your header and footer height */
+    min-height: calc(100vh - 150px);
+    /* Adjust based on your header and footer height */
     background-color: #e0e0e0;
 }
 
@@ -209,7 +217,8 @@ footer a {
     color: #333;
 }
 
-.contact-intro, .contact-cta {
+.contact-intro,
+.contact-cta {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
@@ -284,6 +293,7 @@ footer a {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -332,6 +342,7 @@ footer a {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    top: 3000px;
 }
 
 .nav-button:hover {
