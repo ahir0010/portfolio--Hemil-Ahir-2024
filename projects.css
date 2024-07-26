@@ -50,6 +50,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -157,6 +161,7 @@ main {
     position: relative;
     padding: 2rem 5%;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .timeline {
@@ -294,6 +299,11 @@ footer a:hover {
     margin: 1rem 0;
 }
 
+.contact-main{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
 .contact-info {
     border-right: 1px solid #fff;
     padding-right: 2rem;
@@ -381,6 +391,7 @@ footer a:hover {
     opacity: 0;
     transition: opacity 0.3s ease;
     display: none;
+    line-height: 1rem;
 }
 
 .back-to-top:hover {
@@ -416,6 +427,7 @@ footer a:hover {
     align-items: flex-start;
     padding: 2rem 5%;
     gap: 2rem;
+    padding-bottom: 100px;
 }
 
 .device-frame {
