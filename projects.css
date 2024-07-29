@@ -224,6 +224,21 @@ main {
     opacity: 1;
 }
 
+@media (max-width: 500px) {
+    .experience-description {
+        display: none;
+    }
+
+    .experience:focus-within .experience-description {
+        display: flex;
+        opacity: 1;
+    }
+
+    .experience:focus-within .experience-logo img {
+        opacity: 0;
+    }
+}   
+
 .experience-description h2 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
