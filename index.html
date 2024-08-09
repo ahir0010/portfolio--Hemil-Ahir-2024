@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -96,12 +97,18 @@
         <section class="projects-hero" id="projects">
             <div class="projects-content">
                 <h1>Projects</h1>
-                <h2>UI/UX</h2>
-                <p>Explore my work in UI/UX designs. Scroll through the mobile or tab view to see the full designs.</p>
+                <div class="project-dropdown">
+                    <select id="project-selector">
+                        <option value="uiux">UI/UX</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="photography">Photography</option>
+                    </select>
+                    <i class="bi bi-chevron-down dropdown-icon"></i>
+                </div>
             </div>
         </section>
 
-        <section class="project-showcase">
+        <section class="project-showcase uiux-showcase" id="uiux-showcase">
             <div class="device-frame" id="device-frame">
                 <div class="iphone-x">
                     <div class="buttons">
@@ -132,9 +139,22 @@
                     <div class="macbook-horizontal-bar"></div>
                 </div>
             </div>
-            <button class="nav-button prev-button">&lt;</button>
-            <button class="nav-button next-button">&gt;</button>
         </section>
+
+        <section class="project-showcase webdev-showcase" id="webdev-showcase" style="display:none;">
+            <div class="webdev-content">
+                <h2>Web Development Projects</h2>
+                <!-- Add creative content display for web development -->
+            </div>
+        </section>
+
+        <section class="project-showcase photography-showcase" id="photography-showcase" style="display:none;">
+            <div class="photography-content">
+                <h2>Photography Projects</h2>
+                <!-- Add creative content display for photography -->
+            </div>
+        </section>
+
         <div class="contact-main">
             <section class="contact-content" id="contact">
                 <h1>Get in Touch</h1>

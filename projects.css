@@ -601,15 +601,6 @@ footer a:hover {
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1400px) {
-    .nav-button {
-        position: absolute;
-        transform: translateY(100px);
-        margin: 0.5rem;
-        z-index: 10;
-    }
-}
-
 @media (max-width: 1066px) {
     .timeline {
         width: 0px;
@@ -643,103 +634,6 @@ footer a:hover {
     .macbook::before,
     .macbook-horizontal-bar {
         border-radius: 10px;
-    }
-
-    .nav-button {
-        position: absolute;
-        transform: translateY(100px);
-        margin: 0.5rem;
-        z-index: 10;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 900px) {
-    .nav-button {
-        top: 3655px;
-    }
-}
-
-@media (min-width: 901px) and (max-width: 1024px) {
-    .nav-button {
-        top: 3730px;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1066px) {
-    .nav-button {
-        top: 3800px;
-    }
-}
-
-@media (min-width: 1067px) and (max-width: 1400px) {
-    .nav-button {
-        top: 2980px;
-    }
-}
-
-@media (min-width: 1401px) {
-    .nav-button {
-        top: 3000px;
-    }
-}
-
-@media (max-width: 661px) {
-    .nav-button {
-        top: 4285px;
-    }
-}
-
-@media (max-width: 650px) {
-    .nav-button {
-        top: 4255px;
-    }
-}
-
-@media (max-width: 620px) {
-    .nav-button {
-        top: 4235px;
-    }
-}
-
-@media (max-width: 600px) {
-    .nav-button {
-        top: 4205px;
-    }
-}
-
-@media (max-width: 580px) {
-    .nav-button {
-        top: 4175px;
-    }
-}
-
-@media (max-width: 560px) {
-    .nav-button {
-        top: 4135px;
-    }
-}
-
-@media (max-width: 540px) {
-    .nav-button {
-        top: 4115px;
-    }
-}
-
-@media (max-width: 520px) {
-    .nav-button {
-        top: 4105px;
-    }
-}
-
-@media (max-width: 510px) {
-    .nav-button {
-        top: 4150px;
-    }
-}
-
-@media (max-width: 500px) {
-    .nav-button {
-        top: 4150px;
     }
 }
 
@@ -874,4 +768,42 @@ footer a:hover {
 .experience-heading {
     text-align: center;
     padding-bottom: 50px;
+}
+
+.project-dropdown {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#project-selector {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #ccc; /* Add a subtle underline */
+    color: #333; /* Text color to match the site */
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    padding-right: 30px; /* Add padding to the right for the icon */
+}
+
+#project-selector::-ms-expand {
+    display: none; /* Remove default arrow in IE */
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333; /* Match the color with the website's design */
+    font-size: 16px; /* Adjust the size as needed */
 }

@@ -54,7 +54,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Project navigation
+    // Dropdown selection
+    const projectSelector = document.getElementById('project-selector');
+    const uiuxShowcase = document.getElementById('uiux-showcase');
+    const webdevShowcase = document.getElementById('webdev-showcase');
+    const photographyShowcase = document.getElementById('photography-showcase');
+
+    projectSelector.addEventListener('change', function () {
+        const selectedValue = projectSelector.value;
+        uiuxShowcase.style.display = 'none';
+        webdevShowcase.style.display = 'none';
+        photographyShowcase.style.display = 'none';
+
+        if (selectedValue === 'uiux') {
+            uiuxShowcase.style.display = 'block';
+        } else if (selectedValue === 'webdev') {
+            webdevShowcase.style.display = 'block';
+        } else if (selectedValue === 'photography') {
+            photographyShowcase.style.display = 'block';
+        }
+    });
+
+    // Project navigation for UI/UX
     const projects = [
         {
             mobile: 'image/Obscura-home-mobile-1.png',
@@ -80,16 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
         macbookImage.src = projects[currentIndex].desktop;
         projectLabel.textContent = projects[currentIndex].label;
     }
-
-    document.querySelector('.next-button').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % projects.length;
-        updateProject();
-    });
-
-    document.querySelector('.prev-button').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + projects.length) % projects.length;
-        updateProject();
-    });
 
     // Initial update
     updateProject();
