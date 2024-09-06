@@ -54,12 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Dropdown selection
-    const projectSelector = document.getElementById('project-selector');
-    const uiuxShowcase = document.getElementById('uiux-showcase');
-    const webdevShowcase = document.getElementById('webdev-showcase');
-    const photographyShowcase = document.getElementById('photography-showcase');
-
     projectSelector.addEventListener('change', function () {
         const selectedValue = projectSelector.value;
         uiuxShowcase.style.display = 'none';
@@ -104,4 +98,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial update
     updateProject();
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const projects = [
+        {
+            mobile: 'image/Obscura-home-mobile-1.png',
+            desktop: 'image/Obscura-home-web thing-1.png',
+            label: 'Obscura tattoo home page design (School work)'
+        },
+        {
+            mobile: 'image/Obscura-artist-mobile-1.png',
+            desktop: 'image/Obscura-artist-web-1.png',
+            label: 'Obscura tattoo artist page design (School work)'
+        },
+       {
+        mobile: 'image/Obscura-home-mobile-1.png',
+        desktop: 'image/Obscura-home-web thing-1.png',
+        label: 'Obscura tattoo home page design (School work)'
+    },
+    {
+        mobile: 'image/Obscura-artist-mobile-1.png',
+        desktop: 'image/Obscura-artist-web-1.png',
+        label: 'Obscura tattoo artist page design (School work)'
+    }
+        
+    ];
+
+    let currentIndex = 0;
+
+    const iphoneImage = document.querySelector('.iphone-x .screen img');
+    const macbookImage = document.querySelector('.macbook .macbook-screen img');
+    const projectLabel = document.querySelector('.project-label');
+
+    function updateProject() {
+        iphoneImage.src = projects[currentIndex].mobile;
+        macbookImage.src = projects[currentIndex].desktop;
+        projectLabel.textContent = projects[currentIndex].label;
+    }
+
+    // Initial update
+    updateProject();
+
+    document.getElementById('prev-project').addEventListener('click', function () {
+        currentIndex = (currentIndex === 0) ? projects.length - 1 : currentIndex - 1;
+        updateProject();
+    });
+
+    document.getElementById('next-project').addEventListener('click', function () {
+        currentIndex = (currentIndex === projects.length - 1) ? 0 : currentIndex + 1;
+        updateProject();
+    });
 });
